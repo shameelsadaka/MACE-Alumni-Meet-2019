@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Global Alumni Meet 2019 | MACE Kothamangalam</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-img">
+                    <img src="images/form-img.jpg" alt="">
+                </div>
+                <div class="signup-form">
+                    <form method="POST" class="register-form" id="register-form">
+                        <div class="title-row">
+                            <h4 class="title-reg">REGISTERATION</h4>
+                            <h2 class="title">Global Alumni Meet 2K19</h2>
+                            <h4 class="sub-title">MACE KOTHAMANGALAM</h4>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <div class="form-input">
+                                    <label for="full_name" class="required">Full Name</label>
+                                    <input type="text" name="full_name" id="full_name" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-input">
+                                    <label for="email" class="required">Email</label>
+                                    <input type="text" name="email" id="email" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                                <div class="form-group">
+                                    <div class="form-input">
+                                        <label for="passout_year" class="required">Passout Year</label>
+                                        <input type="number" name="passout_year" id="passout_year" />
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="form-select">
+                                        <div class="label-flex">
+                                            <label for="branch" class="required">BRANCH</label>
+                                        </div>
+                                        <div class="select-list">
+                                            <select name="branch" id="branch">
+                                                <option value="me">Mechanical Engineering</option>
+                                                <option value="eee">Electrical & Electronics Engineering</option>
+                                                <option value="ce">Civil Engineering</option>
+                                                <option value="ece">Electronics & Communication  Engineering</option>
+                                                <option value="cse">Computer Science & Engineering</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="form-row">
+                                <div class="form-group">
+                                    <div class="form-input">
+                                        <label for="phone_number" class="required">Phone number</label>
+                                        <input type="text" name="phone_number" id="phone_number" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                </div>
+                        </div>
+
+                        
+                        <h5 class="info-title">BOOK ADDITIONAL SEATS FOR FAMILY</h5>
+                        
+                        <div class="form-row">
+                            
+                            <div class="form-group">
+                                <div class="form-radio">
+                                    <div class="label-flex">
+                                        <label for="spouse" class="required">SPOUSE</label>
+                                    </div>
+                                    <p class="form-info">~ ₹1000 aditional</p>
+                                    <div class="form-radio-group">
+                                        <div class="form-radio-item">
+                                            <input type="radio" class="sensible-input" name="spouse" value="yes" id="spouse-yes">
+                                            <label for="spouse-yes">Yes</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <input type="radio" class="sensible-input" name="spouse" value="no" id="spouse-no" checked>
+                                            <label for="spouse-no">No</label>
+                                            <span class="check"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                    <div class="form-select">
+                                        <div class="label-flex">
+                                            <label for="children" class="required">CHILDREN (AGE &lt; 5)</label>
+                                        </div>
+                                        <p class="form-info">~ ₹500/person</p>
+                                        <div class="select-list">
+                                            <select name="children" id="children"  class="sensible-input">
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <div class="form-group">
+                                    <div class="form-select">
+                                        <div class="label-flex">
+                                            <label for="kids" class="required">CHILDREN (AGE &lt; 5)</label>
+                                        </div>
+                                        <p class="form-info">no additional charge</p>
+                                        <div class="select-list">
+                                            <select name="kids" id="kids">
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        
+                        <table class="reciept" cellpaddng="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td>Alumni Registeration Fee</td>
+                                <td align="right">₹1500</td>
+                            </tr>
+                            <tr id="spouse-reciept" style="display: none;">
+                                <td>Spouse Registeration</td>
+                                <td align="right">₹1000</td>
+                            </tr>
+                            <tr id="children-reciept" style="display:none;">
+                                <td>Children ( Older than 5 year ) x <span id="variable-children-count"></span> </td>
+                                <td align="right">₹<span id="variable-children-charge"></span></td>
+                            </tr>
+                            <tr class="total">
+                                <td>Total </td>
+                                <td align="right">₹<span id="variable-total">1500</span></td>
+                            </tr>
+                        </table>
+
+                        <div class="form-submit">
+                            <input type="submit" value="COMPLETE REGISTERATION" class="submit" id="submit" name="submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/nouislider/nouislider.min.js"></script>
+    <script src="vendor/wnumb/wNumb.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
