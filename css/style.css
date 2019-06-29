@@ -228,39 +228,49 @@ body {
 
 
 .title-row{
-  padding-bottom: 40px;
-  border-bottom: 1px solid #EEEEEE;
-  margin-bottom: 40px;
-}
-
-.title{
-  line-height: 1.3;
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins';
-  font-size: 2.5rem;
-  color: #35bf90;
+  text-align: center;
 }
 
 .title-name{
-  line-height: 1.3;
+  line-height: 1;
   margin: 0;
   padding: 0;
   font-family: 'Poppins';
-  font-size: 2.5rem;
-  color: #FF0000;
+  font-size: 3.2rem;
+  color: #EE0000;
+  font-weight:400;
+}
+.title{
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+  font-weight: 100;
+  font-size: 2.6em;
+  color: #47a0ff;
 }
 
-.title-reg{
-  line-height: 1;
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins';
-  font-size: 1.2rem;
-  color: #AAAAAA;
+.title-reg-line{
+  margin: 10px 0 50px;
+  text-align:center;
+  border-bottom: 1px solid #CCCCCC;
 }
-.sub-title{
+.title-reg{
+  display: inline-block;
+  transform: translateY(50%);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.1);
   line-height: 1;
+  padding: 6px 20px;
+  border:1px solid #CCCCCC;
+  background:#FFFFFF;
+  font-family: 'Poppins';
+  font-size: 1.1rem;
+  color: #666666;
+}
+
+
+.sub-title{
+  line-height: 1.4;
   margin: 0;
   font-weight: 600;
   color: #232323;
@@ -624,6 +634,12 @@ li.init {
 .form-input {
   position: relative; }
 
+.grey-block{
+  font-style:normal;
+  font-weight:400;
+  color:#AAAAAA;
+}
+
 label.error {
   display: block;
   position: absolute;
@@ -654,6 +670,14 @@ input.error {
   width: 100%;
   z-index: 99; }
 
+@media screen and (min-width: 1024px) {
+  .form-row .form-group.course-group{
+    width:70%;
+  }
+  .form-row .form-group.passoutyear-group{
+    width:30%;
+  }
+}
 @media screen and (max-width: 1024px) {
   .container {
     width: calc( 100% - 30px);
