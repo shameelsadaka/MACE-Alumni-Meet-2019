@@ -44,18 +44,20 @@
 
 $(document).ready(function(){
     $(document).on("change",".sensible-input",function(){
-        var spouse = $("input[name='spouse']:checked"). val();
+        var spouse = parseInt($("#spouse").val());
         var children= parseInt($("#children").val());
 
-        var total = 1500;
-        if(spouse == "yes"){
-            total += 1000;
+        var total = 2000;
+        if(spouse > 0){
+            total += spouse * 1000;
             $("#spouse-reciept").show();
+            $("#variable-spouse-count").text(spouse);
+            $("#variable-spouse-charge").text(spouse * 1000);
         }
         else{
             $("#spouse-reciept").hide();
         }
-        
+
         if(children > 0){
             total += children * 500;
             $("#children-reciept").show();

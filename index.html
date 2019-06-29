@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Global Alumni Meet 2019 | MACE Kothamangalam</title>
+    <title>Memoire'19 | Global Alumni Meet 2019 | MACE Kothamangalam</title>
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
@@ -26,10 +26,11 @@
                     <form method="POST" class="register-form" id="register-form">
                         <div class="title-row">
                             <h4 class="title-reg">REGISTERATION</h4>
+                            <h1 class="title-name">Memoire'19</h1>
                             <h2 class="title">Global Alumni Meet 2K19</h2>
                             <h4 class="sub-title">MACE KOTHAMANGALAM</h4>
                         </div>
-                        
+
                         <div class="form-row">
                             <div class="form-group">
                                 <div class="form-input">
@@ -37,6 +38,15 @@
                                     <input type="text" name="full_name" id="full_name" />
                                 </div>
                             </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <div class="form-input">
+                                        <label for="nick_name" class="sensible-input">Nick Name</label>
+                                        <input type="text" name="nick_name" id="nick_name" />
+                                    </div>
+                                </div>
+
                             <div class="form-group">
                                 <div class="form-input">
                                     <label for="email" class="required">Email</label>
@@ -47,11 +57,36 @@
                         <div class="form-row">
                                 <div class="form-group">
                                     <div class="form-input">
+                                        <label for="phone_number" class="required">Phone number</label>
+                                        <input type="text" name="phone_number" id="phone_number" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                </div>
+                        </div>
+                        <div class="form-row">
+                                <div class="form-group">
+                                    <div class="form-input">
                                         <label for="passout_year" class="required">Passout Year</label>
                                         <input type="number" name="passout_year" id="passout_year" />
                                     </div>
                                 </div>
-                                
+
+                                <div class="form-group">
+                                    <div class="form-select">
+                                        <div class="label-flex">
+                                            <label for="course" class="required">COURSE</label>
+                                        </div>
+                                        <div class="select-list">
+                                            <select name="course" id="course">
+                                                <option value="btech">B.Tech</option>
+                                                <option value="mtech">M.Tech</option>
+                                                <option value="cmca">MCA</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="form-group">
                                     <div class="form-select">
                                         <div class="label-flex">
@@ -64,51 +99,43 @@
                                                 <option value="ce">Civil Engineering</option>
                                                 <option value="ece">Electronics & Communication  Engineering</option>
                                                 <option value="cse">Computer Science & Engineering</option>
+                                                <option value="mca">Master of Computer Applications</options>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
                         </div>
-                        <div class="form-row">
-                                <div class="form-group">
-                                    <div class="form-input">
-                                        <label for="phone_number" class="required">Phone number</label>
-                                        <input type="text" name="phone_number" id="phone_number" />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                </div>
-                        </div>
 
-                        
+
+
                         <h5 class="info-title">BOOK ADDITIONAL SEATS FOR FAMILY</h5>
-                        
+
                         <div class="form-row">
-                            
-                            <div class="form-group">
-                                <div class="form-radio">
-                                    <div class="label-flex">
-                                        <label for="spouse" class="required">SPOUSE</label>
-                                    </div>
-                                    <p class="form-info">~ ₹1000 aditional</p>
-                                    <div class="form-radio-group">
-                                        <div class="form-radio-item">
-                                            <input type="radio" class="sensible-input" name="spouse" value="yes" id="spouse-yes">
-                                            <label for="spouse-yes">Yes</label>
-                                            <span class="check"></span>
-                                        </div>
-                                        <div class="form-radio-item">
-                                            <input type="radio" class="sensible-input" name="spouse" value="no" id="spouse-no" checked>
-                                            <label for="spouse-no">No</label>
-                                            <span class="check"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                             <div class="form-group">
                                     <div class="form-select">
                                         <div class="label-flex">
-                                            <label for="children" class="required">CHILDREN (AGE &lt; 5)</label>
+                                            <label for="spouse" class="required">SPOUSE OR CHILDREN(AGE &gt; 12)</label>
+                                        </div>
+                                        <p class="form-info">~ ₹1000/person</p>
+                                        <div class="select-list">
+                                            <select name="spouse" value="no" id="spouse" class="sensible-input">
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <div class="form-group">
+                                    <div class="form-select">
+                                        <div class="label-flex">
+                                            <label for="children" class="required">CHILDREN (12 &gt; AGE  &gt; 5)</label>
                                         </div>
                                         <p class="form-info">~ ₹500/person</p>
                                         <div class="select-list">
@@ -145,23 +172,23 @@
                                     </div>
                             </div>
                         </div>
-                        
+
                         <table class="reciept" cellpaddng="0" cellspacing="0" width="100%">
                             <tr>
                                 <td>Alumni Registeration Fee</td>
-                                <td align="right">₹1500</td>
+                                <td align="right">₹2000</td>
                             </tr>
                             <tr id="spouse-reciept" style="display: none;">
-                                <td>Spouse Registeration</td>
-                                <td align="right">₹1000</td>
+                                <td>Spouse or Children( Age greater than 12) Registerationx <span id="variable-spouse-count"></span></td>
+                                <td align="right">₹<span id="variable-spouse-charge"></span></td>
                             </tr>
                             <tr id="children-reciept" style="display:none;">
-                                <td>Children ( Older than 5 year ) x <span id="variable-children-count"></span> </td>
+                                <td>Children ( Between 12 & 5 ) x <span id="variable-children-count"></span> </td>
                                 <td align="right">₹<span id="variable-children-charge"></span></td>
                             </tr>
                             <tr class="total">
                                 <td>Total </td>
-                                <td align="right">₹<span id="variable-total">1500</span></td>
+                                <td align="right">₹<span id="variable-total">2000</span></td>
                             </tr>
                         </table>
 
