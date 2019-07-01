@@ -23,6 +23,9 @@
             minlength:6,
         }
     },
+    submitHandler: function(form) {    
+      window.location = "./reg_cmplt.html";
+   },
     onfocusout: function(element) {
         $(element).valid();
     },
@@ -70,3 +73,7 @@ $(document).ready(function(){
         $("#variable-total").text(total);
     });
 });
+/*
+$('#submit').on('click', function(){
+      window.location = "http://www.google.com";
+  });*/
