@@ -670,6 +670,21 @@ input.error {
   width: 100%;
   z-index: 99; }
 
+.reg_main{
+    margin: auto;
+  width: 50%;
+}
+
+  .reg_suc{
+      display: inline-block;
+      line-height: 1;
+      text-align: center;
+      padding: 0px 10px;
+      background:#FFFFFF;
+      font-family: 'Poppins';
+      font-size: 1.3rem;
+  }
+
 @media screen and (min-width: 1024px) {
   .form-row .form-group.course-group{
     width:70%;
