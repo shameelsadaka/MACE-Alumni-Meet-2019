@@ -69,7 +69,7 @@ $(document).ready(function(){
         }
         $("#variable-total").text(total);
     });
-    $("#course").change(function(){
+    $("#course").on("change load",function(){
         if($(this).val() == "mca"){
             $("#branch").val("mca").attr("disabled", true); ;
         }
