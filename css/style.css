@@ -674,10 +674,10 @@ input.error {
 
 @media screen and (min-width: 1024px) {
   .form-row .form-group.course-group{
-    width:70%;
+    width:52%;
   }
-  .form-row .form-group.passoutyear-group{
-    width:30%;
+  .form-row .form-group.batch-group{
+    width:42%;
   }
 }
 @media screen and (max-width: 1024px) {

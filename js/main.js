@@ -21,7 +21,7 @@
         phone_number : {
             required: true,
             minlength:6,
-        }
+        },
     },
     onfocusout: function(element) {
         $(element).valid();
@@ -69,4 +69,12 @@ $(document).ready(function(){
         }
         $("#variable-total").text(total);
     });
+    $("#course").change(function(){
+        if($(this).val() == "mca"){
+            $("#branch").val("mca").attr("disabled", true); ;
+        }
+        else{
+            $("#branch").val("me").attr("disabled", false); ;            
+        }
+    })
 });
