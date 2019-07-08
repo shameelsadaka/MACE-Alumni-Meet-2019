@@ -273,7 +273,7 @@ body {
   line-height: 1.4;
   margin: 0;
   font-weight: 600;
-  color: #232323;
+  color: #666666;
   padding: 0;
   font-family: 'Poppins';
   font-size: 1.4rem;
@@ -328,13 +328,13 @@ label.required {
 input ,select {
   box-sizing: border-box;
   border: 1px solid #ebebeb;
-  padding: 14px 20px;
+  padding: 12px 20px;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   -o-border-radius: 5px;
   -ms-border-radius: 5px;
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'Poppins'; }
   input:focus,select:focus {
     border: 1px solid #329e5e; }
