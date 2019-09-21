@@ -302,7 +302,7 @@ body {
 }
 .form-row {
   margin: 0 -20px; }
-  .form-row .form-group {
+  .form-row .form-group,.form-row .form-radio {
     width: 50%;
     padding: 0 20px; }
 
@@ -597,8 +597,19 @@ li.init {
 .reciept tr.total td{
   border-top:1px solid #8ecbe8;
   padding:12px 0 2px;
+  margin-top:10px;
   font-weight: bold;
 }
+
+.reciept tr#addon_seats h5{
+  margin: 0;
+  border-bottom: 1px dashed #8ecbe8;
+  padding-bottom: 5px;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+
 .submit {
   width: auto;
   height: 50px;
@@ -674,10 +685,13 @@ input.error {
 
 @media screen and (min-width: 1024px) {
   .form-row .form-group.course-group{
-    width:52%;
+    width:20%;
+  }
+  .form-row .form-group.branch-group{
+    width:50%;
   }
   .form-row .form-group.batch-group{
-    width:42%;
+    width:22%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -712,7 +726,7 @@ input.error {
     -ms-flex-direction: column;
     margin: 0px; }
 
-  .form-row .form-group {
+  .form-row .form-group, .form-row .form-radio {
     width: 100%;
     padding: 0 0px; } }
 @media screen and (max-width: 480px) {

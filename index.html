@@ -72,14 +72,35 @@
 
                         </div>
                         <div class="form-row">
-                                <div class="form-group">
-                                    <div class="form-input">
-                                        <label for="passout_year" class="required">Year of Passing</label>
-                                        <input type="number" name="passout_year" id="passout_year" />
+                                <div class="form-radio">
+                                    <div class="label-flex">
+                                        <label for="gender">Gender</label>
+                                    </div>
+                                    <div class="form-radio-group">
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="gender" id="male" checked="" value="male">
+                                            <label for="male">Male</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="gender" id="female" value="female">
+                                            <label for="female">Female</label>
+                                            <span class="check"></span>
+                                        </div>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
+                                        <div class="form-input">
+                                            <label for="passout_year" class="required">Year of Passing</label>
+                                            <input type="number" name="passout_year" id="passout_year" />
+                                        </div>
+                                    </div>
+                                
+                        </div>
+
+                        <div class="form-row">
+                                <div class="form-group course-group">
                                     <div class="form-select">
                                         <div class="label-flex">
                                             <label for="course" class="required">COURSE</label>
@@ -93,10 +114,7 @@
                                         </div>
                                     </div>
                                 </div>
-                        </div>
-
-                        <div class="form-row">
-                                <div class="form-group course-group">
+                                <div class="form-group branch-group">
                                     <div class="form-select">
                                         <div class="label-flex">
                                             <label for="branch" class="required">BRANCH</label>
@@ -133,15 +151,39 @@
                         <h5 class="info-title">BOOK ADDITIONAL SEATS FOR FAMILY</h5>
 
                         <div class="form-row">
+                                <div class="form-radio">
+                                    <div class="label-flex">
+                                        <label for="spouse"  class="required">BOOK SEAT FOR SPOUSE</label>
+                                    </div>
+                                    <div class="form-radio-group">
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="spouse" id="spouse-yes" value="yes" class="sensible-input">
+                                            <label for="spouse-yes">Yes</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="spouse" id="spouse-no" checked=""  value="no" class="sensible-input">
+                                            <label for="spouse-no">No</label>
+                                            <span class="check"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="children">BOOK SEATS FOR CHILDREN</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
 
                             <div class="form-group">
                                     <div class="form-select">
                                         <div class="label-flex">
-                                            <label for="spouse" class="required">SPOUSE/CHILDREN <span class="grey-block">(AGE &gt; 12)</span></label>
+                                            <label for="children" class="required"><span class="grey-block">Age above 12 years </span></label>
                                         </div>
                                         <p class="form-info"> ~ ₹1000/person</p>
                                         <div class="select-list">
-                                            <select name="spouse" value="no" id="spouse" class="sensible-input">
+                                            <select name="adult" value="no" id="adult" class="sensible-input">
                                                 <option value="0">0</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -157,7 +199,7 @@
                             <div class="form-group">
                                     <div class="form-select">
                                         <div class="label-flex">
-                                            <label for="children" class="required">CHILDREN <span class="grey-block">( Age 5 to 12  )</span></label>
+                                            <label for="children" class="required"><span class="grey-block">Age in between 5 to 12 years</span></label>
                                         </div>
                                         <p class="form-info"> ~ ₹500/person</p>
                                         <div class="select-list">
@@ -175,7 +217,7 @@
                             <div class="form-group">
                                     <div class="form-select">
                                         <div class="label-flex">
-                                            <label for="kids" class="required">CHILDREN <span class="grey-block">( AGE &lt; 5 )</span></label>
+                                            <label for="kids" class="required"><span class="grey-block">YOUNGER THAN 5 YEARS </span></label>
                                         </div>
                                         <p class="form-info">no additional charge</p>
                                         <div class="select-list">
@@ -196,9 +238,16 @@
                                 <td>Alumni Registration Fee</td>
                                 <td align="right">₹2000</td>
                             </tr>
+                            <tr  id="addon_seats" style="display: none;">
+                                <td><h5>ADDITIONAL SEATS</h5></td>
+                            </tr>
                             <tr id="spouse-reciept" style="display: none;">
-                                <td>Spouse or Children Registration x <span id="variable-spouse-count"></span></td>
+                                <td>Spouse </td>
                                 <td align="right">₹<span id="variable-spouse-charge"></span></td>
+                            </tr>
+                            <tr id="adult-reciept" style="display: none;">
+                                <td>Children ( Age above 12 ) x <span id="variable-adult-count"></span></td>
+                                <td align="right">₹<span id="variable-adult-charge"></span></td>
                             </tr>
                             <tr id="children-reciept" style="display:none;">
                                 <td>Children ( Age Between 5 and 12 ) x <span id="variable-children-count"></span> </td>
