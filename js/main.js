@@ -18,10 +18,18 @@
             required: true,
             range: [1964, 2019]
         },
+        country_code : {
+            required: true,
+            minlength:2,
+            maxlength:5,
+        },
         phone_number : {
             required: true,
             minlength:6,
         },
+    },
+    messages: {
+        country_code: "Please enter a valid country code",
     },
     onfocusout: function(element) {
         $(element).valid();

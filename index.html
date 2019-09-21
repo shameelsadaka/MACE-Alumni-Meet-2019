@@ -51,8 +51,15 @@
                         <div class="form-row">
                                 <div class="form-group">
                                     <div class="form-input">
-                                        <label for="phone_number" class="required">Phone number</label>
-                                        <input type="text" name="phone_number" id="phone_number" />
+                                        <label for="country_code" class="required">Phone number ( WITH COUNTRY CODE) </label>
+                                        <div class="row">
+                                            <div style="width:25%;float:left;">
+                                                <input type="text" name="country_code" id="country_code" value="+91" onfocus="this.select()" />
+                                            </div>
+                                            <div style="width:70%;float:right;">
+                                                    <input type="text" name="phone_number" id="phone_number" />
+                                            </div>
+                                        </div>  
                                     </div>
                                 </div>
 
